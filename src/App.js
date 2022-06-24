@@ -3,6 +3,7 @@ import './App.css';
 import {useSelector} from "react-redux";
 import Counter from "./components/counter";
 import Posts from "./components/posts";
+import Todos from "./components/todos";
 
 function App() {
 
@@ -13,8 +14,9 @@ function App() {
     return (
         <div>
             <h1>APP {num}</h1>
-            <Posts></Posts>
-            <Counter></Counter>
+            {/*<Posts/>*/}
+            {/*<Counter/>*/}
+            <Todos/>
         </div>
     );
 }
