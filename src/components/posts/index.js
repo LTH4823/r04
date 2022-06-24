@@ -8,19 +8,18 @@ const Posts = () => {
 
     const dispatch = useDispatch()
 
-    const {refresh} = useSelector(state => state.post)
 
-    useEffect(() => {
 
+    useEffect(()=>{
         dispatch(getPostListThunk())
-
-    },[refresh])
+    },[])
 
     return (
         <div>
             <h1>Posts Component</h1>
             <PostInput></PostInput>
             <PostsList></PostsList>
+
         </div>
     );
 };
